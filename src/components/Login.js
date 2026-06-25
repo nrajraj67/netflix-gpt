@@ -40,7 +40,7 @@ const Login = () => {
           className="p-3 my-4 w-full text-base bg-gray-700 rounded-lg"
         />
         <button className="p-3 my-6 text-base bg-red-700 w-full rounded-lg">
-          Sign In
+          {isSignInForm ? "Sign In" : "Sign up"}
         </button>
         <p className="py-3 text-base cursor-pointer" onClick={handleSignIn}>
           {isSignInForm
